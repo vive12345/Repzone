@@ -1,0 +1,17 @@
+flask
+requests
+numpy
+fastapi
+uvicorn
+dotenv
+folium
+scikit-learn
+pyproj
+kneed
+plotly
+pandas
+geopy
+haversine
+ortools
+matplotlib
+polyline

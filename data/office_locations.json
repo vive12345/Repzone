@@ -1,0 +1,37 @@
+[
+    {
+        "city":"Istanbul",
+        "Latitude":41.011219,
+        "Longitude":29.036732,
+        "Address":"Koşuyolu Cad. Cenap Şahabettin Sok. No:23 Koşuyolu KADIKÖY \/ İSTANBUL",
+        "Formatted_Address":"Koşuyolu, Cenap Şahabettin Sokak 23, 34718, Ka...\nName: address, dtype: object"
+    },
+    {
+        "city":"Adana",
+        "Latitude":37.021465,
+        "Longitude":35.315624,
+        "Address":"Yeni Baraj Mah. Ş. Yüzbaşı Bülent Angın Bulvarı Canlı Apt. Sit. No:22\/01 Seyhan \/ ADANA",
+        "Formatted_Address":"Yenibaraj, Bülent Angın Bulvarı, 01150, Seyhan...\nName: address, dtype: object"
+    },
+    {
+        "city":"Ankara",
+        "Latitude":39.910523,
+        "Longitude":32.765457,
+        "Address":"Mustafa Kemal Mah. 2158 Sok. 2120 Cad. 3\/1 Duru Plaza Çankaya \/ ANKARA",
+        "Formatted_Address":"Mustafa Kemal, 2120. Cadde 3, 06530, Çankaya, ...\nName: address, dtype: object"
+    },
+    {
+        "city":"İzmir",
+        "Latitude":38.45513,
+        "Longitude":27.182532,
+        "Address":"Mansuroğlu Mah. 283\/12 Sok. No:16 K:4 D:8 Başarı 14 Apt. Bayraklı \/ İZMİR",
+        "Formatted_Address":"Mansuroğlu, 283\/12. Sokak 16, 35535, Bayraklı,...\nName: address, dtype: object"
+    },
+    {
+        "city":"Trakya",
+        "Latitude":41.160548,
+        "Longitude":27.800557,
+        "Address":"Şeyh Sinan Mah. Hacı Salih Sok. No:1 Hacı Salih İş Merkezi Kat:5 D:20 Çorlu \/ TEKİRDAĞ",
+        "Formatted_Address":"Şeyhsinan, Hacı Salih Sokak 1, 59850, Çorlu, T...\nName: address, dtype: object"
+    }
+]

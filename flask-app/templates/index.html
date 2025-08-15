@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer and Office Locations Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .form-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+        .map-container {
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .clustering-options {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .cluster-form-group {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer and Office Locations Map</h1>
+        
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+        
+        <div class="form-container">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="customer_file">Customer Locations JSON File:</label>
+                    <input type="file" id="customer_file" name="customer_file">
+                    <small>Format should be a list of objects with Latitude and Longitude properties</small>
+                </div>
+                
+                <!-- <div class="form-group">
+                    <label for="office_file">Office Locations JSON File:</label>
+                    <input type="file" id="office_file" name="office_file">
+                    <small>Format should be a list of objects with Latitude and Longitude properties</small>
+                </div>
+                 -->
+                <div class="clustering-options">
+                    <h3>Clustering Options</h3>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="enable_clustering" name="enable_clustering" checked>
+                        <label for="enable_clustering">Enable Customer Clustering</label>
+                    </div>
+                    
+                    <div class="cluster-form-group">
+                        <label for="min_cluster_size">Minimum Cluster Size:</label>
+                        <input type="number" id="min_cluster_size" name="min_cluster_size" value="5" min="1">
+                    </div>
+                    
+                    <div class="cluster-form-group">
+                        <label for="max_cluster_size">Maximum Cluster Size:</label>
+                        <input type="number" id="max_cluster_size" name="max_cluster_size" value="20" min="15">
+                    </div>
+                </div>
+                
+                <button type="submit">Generate Map</button>
+            </form>
+        </div>
+        
+        <div class="map-container">
+            {% if map_html %}
+                {{ map_html|safe }}
+            {% else %}
+                <p style="text-align: center; padding-top: 250px;">Upload files and click "Generate Map" to display the map</p>
+            {% endif %}
+        </div>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+        "city":"Istanbul",
+        "Latitude":41.011219,
+        "Longitude":29.036732,
+        "Address":"Ko\u015fuyolu Cad. Cenap \u015eahabettin Sok. No:23 Ko\u015fuyolu KADIK\u00d6Y \/ \u0130STANBUL",
+        "Formatted_Address":"Ko\u015fuyolu, Cenap \u015eahabettin Sokak 23, 34718, Ka...\nName: address, dtype: object"
+    },
+    {
+        "city":"Adana",
+        "Latitude":37.021465,
+        "Longitude":35.315624,
+        "Address":"Yeni Baraj Mah. \u015e. Y\u00fczba\u015f\u0131 B\u00fclent Ang\u0131n Bulvar\u0131 Canl\u0131 Apt. Sit. No:22\/01 Seyhan \/ ADANA",
+        "Formatted_Address":"Yenibaraj, B\u00fclent Ang\u0131n Bulvar\u0131, 01150, Seyhan...\nName: address, dtype: object"
+    },
+    {
+        "city":"Ankara",
+        "Latitude":39.910523,
+        "Longitude":32.765457,
+        "Address":"Mustafa Kemal Mah. 2158 Sok. 2120 Cad. 3\/1 Duru Plaza \u00c7ankaya \/ ANKARA",
+        "Formatted_Address":"Mustafa Kemal, 2120. Cadde 3, 06530, \u00c7ankaya, ...\nName: address, dtype: object"
+    },
+    {
+        "city":"\u0130zmir",
+        "Latitude":38.45513,
+        "Longitude":27.182532,
+        "Address":"Mansuro\u011flu Mah. 283\/12 Sok. No:16 K:4 D:8 Ba\u015far\u0131 14 Apt. Bayrakl\u0131 \/ \u0130ZM\u0130R",
+        "Formatted_Address":"Mansuro\u011flu, 283\/12. Sokak 16, 35535, Bayrakl\u0131,...\nName: address, dtype: object"
+    },
+    {
+        "city":"Trakya",
+        "Latitude":41.160548,
+        "Longitude":27.800557,
+        "Address":"\u015eeyh Sinan Mah. Hac\u0131 Salih Sok. No:1 Hac\u0131 Salih \u0130\u015f Merkezi Kat:5 D:20 \u00c7orlu \/ TEK\u0130RDA\u011e",
+        "Formatted_Address":"\u015eeyhsinan, Hac\u0131 Salih Sokak 1, 59850, \u00c7orlu, T...\nName: address, dtype: object"
+    }
+]

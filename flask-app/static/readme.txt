@@ -1,0 +1,1 @@
+k.json is the smaller version of the customer_table.json

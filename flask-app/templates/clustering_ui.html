@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Clustering & Routing</title>
+    <style>
+        body { font-family: Arial; margin: 2em; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        pre { background: #fff; padding: 1em; border: 1px solid #ccc; overflow: auto; }
+        .loading {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Customer JSON</h1>
+    <input type="file" id="fileInput" accept=".json">
+    <button id="submitBtn" onclick="uploadAndProcess()">Submit</button>
+    <span id="loadingMessage" style="margin-left: 10px; font-weight: bold; display: none;">Processing...</span>
+
+    <h2>Live Progress:</h2>
+    <pre id="logOutput"></pre>
+
+    <h2>Final Response:</h2>
+    <pre id="output"></pre>
+
+    <h2>Route Map Viewer</h2>
+    <button onclick="loadMapOptions()">Show Route Map</button>
+    <div id="mapSection" style="display:none; margin-top: 1em;">
+        <label for="mapSelect">Select a Cluster Map:</label>
+        <select id="mapSelect" onchange="loadSelectedMap()">
+            <option value="">-- Choose a map --</option>
+        </select>
+        <div style="margin-top: 1em;">
+            <iframe id="mapFrame" width="100%" height="600" style="border:1px solid #ccc;"></iframe>
+        </div>
+    </div>
+
+    <script>
+    function loadMapOptions() {
+        fetch('/list_maps')
+            .then(res => res.json())
+            .then(maps => {
+                const select = document.getElementById("mapSelect");
+                select.innerHTML = '<option value="">-- Choose a map --</option>';
+                maps.forEach(map => {
+                    const opt = document.createElement("option");
+                    opt.value = map;
+                    opt.textContent = map;
+                    select.appendChild(opt);
+                });
+                document.getElementById("mapSection").style.display = "block";
+            })
+            .catch(err => {
+                alert("Failed to load map list: " + err);
+            });
+    }
+
+    function loadSelectedMap() {
+        const mapName = document.getElementById("mapSelect").value;
+        if (mapName) {
+            document.getElementById("mapFrame").src = `/maps/${mapName}`;
+        } else {
+            document.getElementById("mapFrame").src = "";
+        }
+    }
+    </script>
+
+
+    <script>
+        let eventSource = null;
+
+        function startLiveProgress() {
+            const log = document.getElementById('logOutput');
+            log.textContent = ""; // clear previous
+            eventSource = new EventSource('/clust-progress');
+
+            eventSource.onmessage = function(event) {
+                log.textContent = event.data;
+            };
+
+            eventSource.onerror = function() {
+                log.textContent += "\n[Stream closed]";
+                if (eventSource) eventSource.close();
+            };
+        }
+
+        function uploadAndProcess() {
+            const fileInput = document.getElementById('fileInput');
+            const output = document.getElementById('output');
+            const button = document.getElementById('submitBtn');
+            const loadingMessage = document.getElementById('loadingMessage');
+
+            if (!fileInput.files[0]) {
+                alert("Please select a JSON file.");
+                return;
+            }
+
+            // Disable button and show processing message
+            button.disabled = true;
+            button.classList.add("loading");
+            loadingMessage.style.display = "inline";
+
+            // Start SSE stream
+            startLiveProgress();
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                try {
+                    const customerJson = JSON.parse(event.target.result);
+                    fetch('/clust', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ customer_table: customerJson })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.log) {
+                            document.getElementById('logOutput').textContent += "\n\n[Completed]\n" + data.log.join("\n");
+                        }
+                        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+                    })
+                    .catch(err => {
+                        output.textContent = "Error: " + err;
+                    })
+                    .finally(() => {
+                        button.disabled = false;
+                        button.classList.remove("loading");
+                        loadingMessage.style.display = "none";
+                        if (eventSource) eventSource.close(); // Stop SSE
+                    });
+                } catch (e) {
+                    output.textContent = "Invalid JSON: " + e;
+                    button.disabled = false;
+                    loadingMessage.style.display = "none";
+                    if (eventSource) eventSource.close();
+                }
+            };
+            reader.readAsText(fileInput.files[0]);
+        }
+    </script>
+</body>
+</html>

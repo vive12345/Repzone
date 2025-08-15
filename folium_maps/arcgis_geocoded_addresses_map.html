@@ -1,0 +1,3110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b2fbd94f0155397c8857bc241908186a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b2fbd94f0155397c8857bc241908186a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b2fbd94f0155397c8857bc241908186a = L.map(
+                "map_b2fbd94f0155397c8857bc241908186a",
+                {
+                    center: [38.319374, 26.754501],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4bfb3a307e416d3949fd8a88c76ad4a7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4bfb3a307e416d3949fd8a88c76ad4a7.addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var marker_3117193e77da7082302029399d8636db = L.marker(
+                [38.319374, 26.754501],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_ab9672ad4b818c3563104aa0a5013c4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9211f555df2ce76f8569a1b746b62dc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_023814e9f306ea0665352b09702d18a2 = $(`<div id="html_023814e9f306ea0665352b09702d18a2" style="width: 100.0%; height: 100.0%;">Altıntaş Mah. Ahmet Besim Uyal Cad. No: 48 Urla/İzmir ,Urla,İzmir,Turkey</div>`)[0];
+                popup_9211f555df2ce76f8569a1b746b62dc2.setContent(html_023814e9f306ea0665352b09702d18a2);
+            
+        
+
+        marker_3117193e77da7082302029399d8636db.bindPopup(popup_9211f555df2ce76f8569a1b746b62dc2)
+        ;
+
+        
+    
+    
+            marker_3117193e77da7082302029399d8636db.bindTooltip(
+                `<div>
+                     Altıntaş Mah. Ahmet Besim Uyal Cad. No: 48 Urla/İzmir ,Urla,İzmir,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3117193e77da7082302029399d8636db.setIcon(icon_ab9672ad4b818c3563104aa0a5013c4c);
+            
+    
+            var marker_47fa2a43914e7f3a6fcc1aa3c4804966 = L.marker(
+                [37.02754, 27.39114],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_42d528730ed6e463f720f552027a5d80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9040a1b81cf58855975b6a9203c1a2ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e49a35ba7e2de412d77ad3e320728718 = $(`<div id="html_e49a35ba7e2de412d77ad3e320728718" style="width: 100.0%; height: 100.0%;">Bitez Mah.Adnan Menderes Cad. No:98-96 Bodrum/Muğla ,Bodrum,Muğla,Turkey</div>`)[0];
+                popup_9040a1b81cf58855975b6a9203c1a2ab.setContent(html_e49a35ba7e2de412d77ad3e320728718);
+            
+        
+
+        marker_47fa2a43914e7f3a6fcc1aa3c4804966.bindPopup(popup_9040a1b81cf58855975b6a9203c1a2ab)
+        ;
+
+        
+    
+    
+            marker_47fa2a43914e7f3a6fcc1aa3c4804966.bindTooltip(
+                `<div>
+                     Bitez Mah.Adnan Menderes Cad. No:98-96 Bodrum/Muğla ,Bodrum,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_47fa2a43914e7f3a6fcc1aa3c4804966.setIcon(icon_42d528730ed6e463f720f552027a5d80);
+            
+    
+            var marker_424effe30d7e42114b37e43b38e921d8 = L.marker(
+                [40.963773, 29.072932],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_48bceee779a8d7720eeca318c32e5dc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7cf9b62e5ab7d8d0e7450fd6b85d078 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36c8648fca5f395d161146232c4c5e21 = $(`<div id="html_36c8648fca5f395d161146232c4c5e21" style="width: 100.0%; height: 100.0%;">Caddebostan Mah, Nihat Kızıltan Sok. No:3 Kadıköy/İstanbul ,Kadıkoy,İstanbul,Turkey</div>`)[0];
+                popup_c7cf9b62e5ab7d8d0e7450fd6b85d078.setContent(html_36c8648fca5f395d161146232c4c5e21);
+            
+        
+
+        marker_424effe30d7e42114b37e43b38e921d8.bindPopup(popup_c7cf9b62e5ab7d8d0e7450fd6b85d078)
+        ;
+
+        
+    
+    
+            marker_424effe30d7e42114b37e43b38e921d8.bindTooltip(
+                `<div>
+                     Caddebostan Mah, Nihat Kızıltan Sok. No:3 Kadıköy/İstanbul ,Kadıkoy,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_424effe30d7e42114b37e43b38e921d8.setIcon(icon_48bceee779a8d7720eeca318c32e5dc2);
+            
+    
+            var marker_44552e17fc964c2363a050e585175c17 = L.marker(
+                [36.62253, 29.11148],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_7562229bbad5976bc927ef5d35d0d8c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c028a5c0938dddebb331728500dab68d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db2378d9c5c6cad9683e2bf3b38372dc = $(`<div id="html_db2378d9c5c6cad9683e2bf3b38372dc" style="width: 100.0%; height: 100.0%;">Cumhuriyet Mah.Turgut Özal Cad.Okaliptus İş Merkez Fethiye/Muğla ,Fethiye,Muğla,Turkey</div>`)[0];
+                popup_c028a5c0938dddebb331728500dab68d.setContent(html_db2378d9c5c6cad9683e2bf3b38372dc);
+            
+        
+
+        marker_44552e17fc964c2363a050e585175c17.bindPopup(popup_c028a5c0938dddebb331728500dab68d)
+        ;
+
+        
+    
+    
+            marker_44552e17fc964c2363a050e585175c17.bindTooltip(
+                `<div>
+                     Cumhuriyet Mah.Turgut Özal Cad.Okaliptus İş Merkez Fethiye/Muğla ,Fethiye,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_44552e17fc964c2363a050e585175c17.setIcon(icon_7562229bbad5976bc927ef5d35d0d8c1);
+            
+    
+            var marker_f51aaa405f165c7929fd299ab317a15f = L.marker(
+                [41.043867, 29.012893],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_12b73aed022fda1e37cc6de4e4193d81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da6d4315979c39214dced59a21dc03b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bb7ef046b0a765b0b7ad6aac2fbce2b = $(`<div id="html_0bb7ef046b0a765b0b7ad6aac2fbce2b" style="width: 100.0%; height: 100.0%;">Dikilitaş Mah. Ayazmadere Cad No:10A Beşiktaş/İstanbul ,Beşiktaş,İstanbul,Turkey</div>`)[0];
+                popup_da6d4315979c39214dced59a21dc03b8.setContent(html_0bb7ef046b0a765b0b7ad6aac2fbce2b);
+            
+        
+
+        marker_f51aaa405f165c7929fd299ab317a15f.bindPopup(popup_da6d4315979c39214dced59a21dc03b8)
+        ;
+
+        
+    
+    
+            marker_f51aaa405f165c7929fd299ab317a15f.bindTooltip(
+                `<div>
+                     Dikilitaş Mah. Ayazmadere Cad No:10A Beşiktaş/İstanbul ,Beşiktaş,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f51aaa405f165c7929fd299ab317a15f.setIcon(icon_12b73aed022fda1e37cc6de4e4193d81);
+            
+    
+            var marker_4bc4e73c99a669ae368c0ab1ff9211a8 = L.marker(
+                [37.035756, 27.429312],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_c2f3973b660648f2dcf0f04204ad354b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6ff717e373889f8f7981447fac89c8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1948fb62c9d5142e3aa256d1fa55afe = $(`<div id="html_a1948fb62c9d5142e3aa256d1fa55afe" style="width: 100.0%; height: 100.0%;">Dirmil Mah. 6689. Sok. No: 1E Adres Yalıkavak Bodrum/Muğla ,Bodrum,Muğla,Turkey</div>`)[0];
+                popup_e6ff717e373889f8f7981447fac89c8d.setContent(html_a1948fb62c9d5142e3aa256d1fa55afe);
+            
+        
+
+        marker_4bc4e73c99a669ae368c0ab1ff9211a8.bindPopup(popup_e6ff717e373889f8f7981447fac89c8d)
+        ;
+
+        
+    
+    
+            marker_4bc4e73c99a669ae368c0ab1ff9211a8.bindTooltip(
+                `<div>
+                     Dirmil Mah. 6689. Sok. No: 1E Adres Yalıkavak Bodrum/Muğla ,Bodrum,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4bc4e73c99a669ae368c0ab1ff9211a8.setIcon(icon_c2f3973b660648f2dcf0f04204ad354b);
+            
+    
+            var marker_76dee87dde3ec8e7de878a44322bc05a = L.marker(
+                [41.079733, 28.60147],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_ff72c2779720cdd893e8fdb4c08cec93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdb5add6cb30d428700ff8fbd05428eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88982faa4b6bd1422f672f274b1ba4d8 = $(`<div id="html_88982faa4b6bd1422f672f274b1ba4d8" style="width: 100.0%; height: 100.0%;">Karaağaç Mah. Dr. Hasan Akgün Cad. No:20/1 Büyükçekmece/İstanbu ,Büyükçekmece,İstanbul,Turkey</div>`)[0];
+                popup_fdb5add6cb30d428700ff8fbd05428eb.setContent(html_88982faa4b6bd1422f672f274b1ba4d8);
+            
+        
+
+        marker_76dee87dde3ec8e7de878a44322bc05a.bindPopup(popup_fdb5add6cb30d428700ff8fbd05428eb)
+        ;
+
+        
+    
+    
+            marker_76dee87dde3ec8e7de878a44322bc05a.bindTooltip(
+                `<div>
+                     Karaağaç Mah. Dr. Hasan Akgün Cad. No:20/1 Büyükçekmece/İstanbu ,Büyükçekmece,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_76dee87dde3ec8e7de878a44322bc05a.setIcon(icon_ff72c2779720cdd893e8fdb4c08cec93);
+            
+    
+            var marker_9f09bbb157999d2a9fc2c5630992a833 = L.marker(
+                [41.001139, 28.547774],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_0de23e08b3fb9cd360bd6a937ca2733b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee7de346a04edc93c1e8025e99283c00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f233f001971025fdbe864a9e49a5268c = $(`<div id="html_f233f001971025fdbe864a9e49a5268c" style="width: 100.0%; height: 100.0%;">Mimaroba Mah. Ecmel Sk. No:4 Büyükçekmece/İstanbu ,Büyükçekmece,İstanbul,Turkey</div>`)[0];
+                popup_ee7de346a04edc93c1e8025e99283c00.setContent(html_f233f001971025fdbe864a9e49a5268c);
+            
+        
+
+        marker_9f09bbb157999d2a9fc2c5630992a833.bindPopup(popup_ee7de346a04edc93c1e8025e99283c00)
+        ;
+
+        
+    
+    
+            marker_9f09bbb157999d2a9fc2c5630992a833.bindTooltip(
+                `<div>
+                     Mimaroba Mah. Ecmel Sk. No:4 Büyükçekmece/İstanbu ,Büyükçekmece,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f09bbb157999d2a9fc2c5630992a833.setIcon(icon_0de23e08b3fb9cd360bd6a937ca2733b);
+            
+    
+            var marker_686234c5217e5f8add4dcd4d5df40036 = L.marker(
+                [36.828771, 31.334745],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_b1158949d67501e6ef1e78cae0c4d9b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c11171d80f4623ec8782dc11bd0bff1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc548ee85d085d5e0cc6784b60a7c8d6 = $(`<div id="html_cc548ee85d085d5e0cc6784b60a7c8d6" style="width: 100.0%; height: 100.0%;">Sarılar Mah. Antalya Cad. Dış Kapı No:16 Manavgat/Antalya ,Manavgat,Antalya,Turkey</div>`)[0];
+                popup_8c11171d80f4623ec8782dc11bd0bff1.setContent(html_cc548ee85d085d5e0cc6784b60a7c8d6);
+            
+        
+
+        marker_686234c5217e5f8add4dcd4d5df40036.bindPopup(popup_8c11171d80f4623ec8782dc11bd0bff1)
+        ;
+
+        
+    
+    
+            marker_686234c5217e5f8add4dcd4d5df40036.bindTooltip(
+                `<div>
+                     Sarılar Mah. Antalya Cad. Dış Kapı No:16 Manavgat/Antalya ,Manavgat,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_686234c5217e5f8add4dcd4d5df40036.setIcon(icon_b1158949d67501e6ef1e78cae0c4d9b5);
+            
+    
+            var marker_b2234f578a6988a14065b54dfcc54524 = L.marker(
+                [36.886391, 30.710487],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_a58d7dde4fe54bb44ed3145f0dfeb18f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb3d92635e7d2615ca688c903fb2ad3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73f2a71e70b5f91c56eaf9ce8df4a46f = $(`<div id="html_73f2a71e70b5f91c56eaf9ce8df4a46f" style="width: 100.0%; height: 100.0%;">Şirinyalı Mah. Lara Cad. No:135/A-B-C Muratpaşa/Antalya ,Muratpaşa,Antalya,Turkey</div>`)[0];
+                popup_cb3d92635e7d2615ca688c903fb2ad3c.setContent(html_73f2a71e70b5f91c56eaf9ce8df4a46f);
+            
+        
+
+        marker_b2234f578a6988a14065b54dfcc54524.bindPopup(popup_cb3d92635e7d2615ca688c903fb2ad3c)
+        ;
+
+        
+    
+    
+            marker_b2234f578a6988a14065b54dfcc54524.bindTooltip(
+                `<div>
+                     Şirinyalı Mah. Lara Cad. No:135/A-B-C Muratpaşa/Antalya ,Muratpaşa,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2234f578a6988a14065b54dfcc54524.setIcon(icon_a58d7dde4fe54bb44ed3145f0dfeb18f);
+            
+    
+            var marker_8edc6b973ac3e14c7456fd63acafe924 = L.marker(
+                [41.065765, 29.004186],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_a6ee17a021b02596f6f4fb0337fb6f7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9f568969c152f0fefb284be751b0399 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e558f57ae7d77b8b1af301f1cc3c7202 = $(`<div id="html_e558f57ae7d77b8b1af301f1cc3c7202" style="width: 100.0%; height: 100.0%;">Yıldızposta Cad. Vefabey Sok No:26 Gayrettepe Beşiktaş/İstanbul ,Beşiktaş,İstanbul,Turkey</div>`)[0];
+                popup_d9f568969c152f0fefb284be751b0399.setContent(html_e558f57ae7d77b8b1af301f1cc3c7202);
+            
+        
+
+        marker_8edc6b973ac3e14c7456fd63acafe924.bindPopup(popup_d9f568969c152f0fefb284be751b0399)
+        ;
+
+        
+    
+    
+            marker_8edc6b973ac3e14c7456fd63acafe924.bindTooltip(
+                `<div>
+                     Yıldızposta Cad. Vefabey Sok No:26 Gayrettepe Beşiktaş/İstanbul ,Beşiktaş,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8edc6b973ac3e14c7456fd63acafe924.setIcon(icon_a6ee17a021b02596f6f4fb0337fb6f7e);
+            
+    
+            var marker_2b00fad1de64577ed3adeeb15026c6eb = L.marker(
+                [40.673214, 36.570489],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_5780114573346e8ccbd5d51c9d96274b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a954dcb6f84e84d16fa251ff6017d9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34ed1aa7829ed58f2577cdfb6bdf5cb7 = $(`<div id="html_34ed1aa7829ed58f2577cdfb6bdf5cb7" style="width: 100.0%; height: 100.0%;">Cumhuriyet Mah. Erek Cad. No: 24/Z101-Z102 Erbaa/Tokat ,Erbaa,Tokat,Turkey</div>`)[0];
+                popup_4a954dcb6f84e84d16fa251ff6017d9e.setContent(html_34ed1aa7829ed58f2577cdfb6bdf5cb7);
+            
+        
+
+        marker_2b00fad1de64577ed3adeeb15026c6eb.bindPopup(popup_4a954dcb6f84e84d16fa251ff6017d9e)
+        ;
+
+        
+    
+    
+            marker_2b00fad1de64577ed3adeeb15026c6eb.bindTooltip(
+                `<div>
+                     Cumhuriyet Mah. Erek Cad. No: 24/Z101-Z102 Erbaa/Tokat ,Erbaa,Tokat,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2b00fad1de64577ed3adeeb15026c6eb.setIcon(icon_5780114573346e8ccbd5d51c9d96274b);
+            
+    
+            var marker_47fc1d514d8d1a0500948e64b0b6eadd = L.marker(
+                [36.546807, 30.549858],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_bfc477af3c0f5d1fd541a9e0e503fc1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e1575b27ceacb7ce5c4cbd3336934f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fb956b2aba896fdc5bfcd0ba9d97bae = $(`<div id="html_4fb956b2aba896fdc5bfcd0ba9d97bae" style="width: 100.0%; height: 100.0%;">Çamyuva Mah. 5111 Sokak No:2 D:1- D:2 Kemer/Antalya ,Kemer,Antalya,Turkey</div>`)[0];
+                popup_9e1575b27ceacb7ce5c4cbd3336934f2.setContent(html_4fb956b2aba896fdc5bfcd0ba9d97bae);
+            
+        
+
+        marker_47fc1d514d8d1a0500948e64b0b6eadd.bindPopup(popup_9e1575b27ceacb7ce5c4cbd3336934f2)
+        ;
+
+        
+    
+    
+            marker_47fc1d514d8d1a0500948e64b0b6eadd.bindTooltip(
+                `<div>
+                     Çamyuva Mah. 5111 Sokak No:2 D:1- D:2 Kemer/Antalya ,Kemer,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_47fc1d514d8d1a0500948e64b0b6eadd.setIcon(icon_bfc477af3c0f5d1fd541a9e0e503fc1a);
+            
+    
+            var marker_39ffd3b0fc24217042ede0d66687cac9 = L.marker(
+                [37.82332, 30.54356],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_51c7e698329ec142275470473986c0d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56f604056f01e03454e5b7d8f440b82e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f208461cf4200e3d23e8ef50efd04eb = $(`<div id="html_0f208461cf4200e3d23e8ef50efd04eb" style="width: 100.0%; height: 100.0%;">Çünür Mah.5487 Sk. No:14-16E/1-2-3 Merkez/Isparta ,Merkez,Isparta,Turkey</div>`)[0];
+                popup_56f604056f01e03454e5b7d8f440b82e.setContent(html_0f208461cf4200e3d23e8ef50efd04eb);
+            
+        
+
+        marker_39ffd3b0fc24217042ede0d66687cac9.bindPopup(popup_56f604056f01e03454e5b7d8f440b82e)
+        ;
+
+        
+    
+    
+            marker_39ffd3b0fc24217042ede0d66687cac9.bindTooltip(
+                `<div>
+                     Çünür Mah.5487 Sk. No:14-16E/1-2-3 Merkez/Isparta ,Merkez,Isparta,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39ffd3b0fc24217042ede0d66687cac9.setIcon(icon_51c7e698329ec142275470473986c0d3);
+            
+    
+            var marker_ee33dfd4cd255df583d876bf585be4ad = L.marker(
+                [36.540102, 32.034751],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_123663448d68a76c9a96280ced783908 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a6a756ae64e51d417831d0a0c3013d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d68b81ec6f6f0e411e08870632233c22 = $(`<div id="html_d68b81ec6f6f0e411e08870632233c22" style="width: 100.0%; height: 100.0%;">Kargıcak Mah.Merkez 25 Sk.No:7 A Alanya/Antalya ,Alanya,Antalya,Turkey</div>`)[0];
+                popup_6a6a756ae64e51d417831d0a0c3013d6.setContent(html_d68b81ec6f6f0e411e08870632233c22);
+            
+        
+
+        marker_ee33dfd4cd255df583d876bf585be4ad.bindPopup(popup_6a6a756ae64e51d417831d0a0c3013d6)
+        ;
+
+        
+    
+    
+            marker_ee33dfd4cd255df583d876bf585be4ad.bindTooltip(
+                `<div>
+                     Kargıcak Mah.Merkez 25 Sk.No:7 A Alanya/Antalya ,Alanya,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee33dfd4cd255df583d876bf585be4ad.setIcon(icon_123663448d68a76c9a96280ced783908);
+            
+    
+            var marker_4509b959cbe041bb343a8c82ad69d779 = L.marker(
+                [37.798972, 29.105046],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_293a662b9c3a6dcac632c00756f2d779 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39ea6ba2c8d9e679d07d7da41f891a0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9311ab504bce466a87864aa542a2ca65 = $(`<div id="html_9311ab504bce466a87864aa542a2ca65" style="width: 100.0%; height: 100.0%;">Karşıyaka Mh. Ankara Blv. No:140 Pamukkale/Denızlı ,Pamukkale,Denizli,Turkey</div>`)[0];
+                popup_39ea6ba2c8d9e679d07d7da41f891a0d.setContent(html_9311ab504bce466a87864aa542a2ca65);
+            
+        
+
+        marker_4509b959cbe041bb343a8c82ad69d779.bindPopup(popup_39ea6ba2c8d9e679d07d7da41f891a0d)
+        ;
+
+        
+    
+    
+            marker_4509b959cbe041bb343a8c82ad69d779.bindTooltip(
+                `<div>
+                     Karşıyaka Mh. Ankara Blv. No:140 Pamukkale/Denızlı ,Pamukkale,Denizli,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4509b959cbe041bb343a8c82ad69d779.setIcon(icon_293a662b9c3a6dcac632c00756f2d779);
+            
+    
+            var marker_86c56330d77cc2841ced7f2e124d4876 = L.marker(
+                [40.982737, 28.65742],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_57269066aebd03bc9a44204d8cd7634d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c60df739b159db8e72136d3a0bfbb90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f8e036840bf8e203f714e529a998dd4 = $(`<div id="html_3f8e036840bf8e203f714e529a998dd4" style="width: 100.0%; height: 100.0%;">Kavaklı Mah. Yeşilyurt Cad. No:17/D Beylikdüzü/İstanbul ,Beylikdüzü,İstanbul,Turkey</div>`)[0];
+                popup_0c60df739b159db8e72136d3a0bfbb90.setContent(html_3f8e036840bf8e203f714e529a998dd4);
+            
+        
+
+        marker_86c56330d77cc2841ced7f2e124d4876.bindPopup(popup_0c60df739b159db8e72136d3a0bfbb90)
+        ;
+
+        
+    
+    
+            marker_86c56330d77cc2841ced7f2e124d4876.bindTooltip(
+                `<div>
+                     Kavaklı Mah. Yeşilyurt Cad. No:17/D Beylikdüzü/İstanbul ,Beylikdüzü,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_86c56330d77cc2841ced7f2e124d4876.setIcon(icon_57269066aebd03bc9a44204d8cd7634d);
+            
+    
+            var marker_09f7e6ed55814423c62a2e38da920758 = L.marker(
+                [41.069488, 28.665388],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_7b4b9f8caa1ca0672e035ea707f3cfb8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf1beda187b8302ce1489e3f62241fbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ec963e815ec84d50177ff21bfd0fec5 = $(`<div id="html_7ec963e815ec84d50177ff21bfd0fec5" style="width: 100.0%; height: 100.0%;">Koza Mah. Esenkent Bahçeşehir Yolu Cd. No:22 Esenyurt/İstanbul ,Esenyurt,İstanbul,Turkey</div>`)[0];
+                popup_cf1beda187b8302ce1489e3f62241fbe.setContent(html_7ec963e815ec84d50177ff21bfd0fec5);
+            
+        
+
+        marker_09f7e6ed55814423c62a2e38da920758.bindPopup(popup_cf1beda187b8302ce1489e3f62241fbe)
+        ;
+
+        
+    
+    
+            marker_09f7e6ed55814423c62a2e38da920758.bindTooltip(
+                `<div>
+                     Koza Mah. Esenkent Bahçeşehir Yolu Cd. No:22 Esenyurt/İstanbul ,Esenyurt,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09f7e6ed55814423c62a2e38da920758.setIcon(icon_7b4b9f8caa1ca0672e035ea707f3cfb8);
+            
+    
+            var marker_a1b7f0fa1dab5940e225008fa4f51a08 = L.marker(
+                [40.995963, 28.863093],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_58ec4d01b75945419fd8890ebda98f38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2d5791b9ebfd4b32327950a6049b688 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2a163749e5836322d0f363f39992321 = $(`<div id="html_f2a163749e5836322d0f363f39992321" style="width: 100.0%; height: 100.0%;">Metroport Avm Eski Londra Asfaltı Kültür Sok. No:1 Bahçelievler/İstanbu ,Bahçelievler,İstanbul,Turkey</div>`)[0];
+                popup_d2d5791b9ebfd4b32327950a6049b688.setContent(html_f2a163749e5836322d0f363f39992321);
+            
+        
+
+        marker_a1b7f0fa1dab5940e225008fa4f51a08.bindPopup(popup_d2d5791b9ebfd4b32327950a6049b688)
+        ;
+
+        
+    
+    
+            marker_a1b7f0fa1dab5940e225008fa4f51a08.bindTooltip(
+                `<div>
+                     Metroport Avm Eski Londra Asfaltı Kültür Sok. No:1 Bahçelievler/İstanbu ,Bahçelievler,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1b7f0fa1dab5940e225008fa4f51a08.setIcon(icon_58ec4d01b75945419fd8890ebda98f38);
+            
+    
+            var marker_13b7e9ad47bb5f2c87de8bd7ba5a82a7 = L.marker(
+                [40.976184, 28.655777],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_7c95c5df7967dd8a654cfe864fefa092 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5102e4f41a95f663d1daa87d42dfaec4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ab70cbf864382eb3a053418a6e9497a = $(`<div id="html_8ab70cbf864382eb3a053418a6e9497a" style="width: 100.0%; height: 100.0%;">Mustafa Kemal Cd. 68 A, 34520 Beylikdüzü Osb Beylikdüzü/İstanbul ,Beylikdüzü,İstanbul,Turkey</div>`)[0];
+                popup_5102e4f41a95f663d1daa87d42dfaec4.setContent(html_8ab70cbf864382eb3a053418a6e9497a);
+            
+        
+
+        marker_13b7e9ad47bb5f2c87de8bd7ba5a82a7.bindPopup(popup_5102e4f41a95f663d1daa87d42dfaec4)
+        ;
+
+        
+    
+    
+            marker_13b7e9ad47bb5f2c87de8bd7ba5a82a7.bindTooltip(
+                `<div>
+                     Mustafa Kemal Cd. 68 A, 34520 Beylikdüzü Osb Beylikdüzü/İstanbul ,Beylikdüzü,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13b7e9ad47bb5f2c87de8bd7ba5a82a7.setIcon(icon_7c95c5df7967dd8a654cfe864fefa092);
+            
+    
+            var marker_4c89189d0c509d017a039a03b1bc91d3 = L.marker(
+                [36.572143, 29.145128],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_af7107f7dae221ed58c134e0f8a13418 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb2e4f5ada8d3ca87c8039faa0ded724 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04fc1c6bff0a6a4ffe5a76c2a1f3fd50 = $(`<div id="html_04fc1c6bff0a6a4ffe5a76c2a1f3fd50" style="width: 100.0%; height: 100.0%;">Ölüdeniz Mah. Atatürk Cad. No: 124 Fethiye/Muğla ,Fethiye,Muğla,Turkey</div>`)[0];
+                popup_eb2e4f5ada8d3ca87c8039faa0ded724.setContent(html_04fc1c6bff0a6a4ffe5a76c2a1f3fd50);
+            
+        
+
+        marker_4c89189d0c509d017a039a03b1bc91d3.bindPopup(popup_eb2e4f5ada8d3ca87c8039faa0ded724)
+        ;
+
+        
+    
+    
+            marker_4c89189d0c509d017a039a03b1bc91d3.bindTooltip(
+                `<div>
+                     Ölüdeniz Mah. Atatürk Cad. No: 124 Fethiye/Muğla ,Fethiye,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c89189d0c509d017a039a03b1bc91d3.setIcon(icon_af7107f7dae221ed58c134e0f8a13418);
+            
+    
+            var marker_0f85a836c5cf8a29cb170851108b447e = L.marker(
+                [41.671958, 26.594372],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_f20df93adf30ac7602c0f1b669cd33e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_671990dde05ab37abdbe751a65b24f84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e74fba1ef3dfa914effcb06f61a2790 = $(`<div id="html_1e74fba1ef3dfa914effcb06f61a2790" style="width: 100.0%; height: 100.0%;">Şükrüpaşa Mah.Alper Yazoğlu Cad No:14/A Merkez/Edirne ,Merkez,Edirne,Turkey</div>`)[0];
+                popup_671990dde05ab37abdbe751a65b24f84.setContent(html_1e74fba1ef3dfa914effcb06f61a2790);
+            
+        
+
+        marker_0f85a836c5cf8a29cb170851108b447e.bindPopup(popup_671990dde05ab37abdbe751a65b24f84)
+        ;
+
+        
+    
+    
+            marker_0f85a836c5cf8a29cb170851108b447e.bindTooltip(
+                `<div>
+                     Şükrüpaşa Mah.Alper Yazoğlu Cad No:14/A Merkez/Edirne ,Merkez,Edirne,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f85a836c5cf8a29cb170851108b447e.setIcon(icon_f20df93adf30ac7602c0f1b669cd33e4);
+            
+    
+            var marker_1ff88ae75102d63232e3a43d68505e35 = L.marker(
+                [37.749519, 29.1063],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_1b5b52a11ab27af36ef4db2df1c61de4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_970d599a3fd3b83aeeb53027a7f6cb47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_560eeb28c4ce9ad5f699009da19d6cdf = $(`<div id="html_560eeb28c4ce9ad5f699009da19d6cdf" style="width: 100.0%; height: 100.0%;">Yunus Emre Mh. Süleyman Demirel Blv. No:20 Pamukkale/Denızlı ,Pamukkale,Denizli,Turkey</div>`)[0];
+                popup_970d599a3fd3b83aeeb53027a7f6cb47.setContent(html_560eeb28c4ce9ad5f699009da19d6cdf);
+            
+        
+
+        marker_1ff88ae75102d63232e3a43d68505e35.bindPopup(popup_970d599a3fd3b83aeeb53027a7f6cb47)
+        ;
+
+        
+    
+    
+            marker_1ff88ae75102d63232e3a43d68505e35.bindTooltip(
+                `<div>
+                     Yunus Emre Mh. Süleyman Demirel Blv. No:20 Pamukkale/Denızlı ,Pamukkale,Denizli,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ff88ae75102d63232e3a43d68505e35.setIcon(icon_1b5b52a11ab27af36ef4db2df1c61de4);
+            
+    
+            var marker_35a9fad99748ea65e443cda5b96b748d = L.marker(
+                [38.503493, 43.396448],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_772f55faec390029c84f0a61d4088e3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3aa9d56acacd329504ffee57b6e185c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b71e1a7450d3c6d473d918f21d3e46e2 = $(`<div id="html_b71e1a7450d3c6d473d918f21d3e46e2" style="width: 100.0%; height: 100.0%;">Alipaşa Mah. Suvaroğlu Cad. No:33 A İpekyolu/Van ,İpekyolu,Van,Turkey</div>`)[0];
+                popup_3aa9d56acacd329504ffee57b6e185c0.setContent(html_b71e1a7450d3c6d473d918f21d3e46e2);
+            
+        
+
+        marker_35a9fad99748ea65e443cda5b96b748d.bindPopup(popup_3aa9d56acacd329504ffee57b6e185c0)
+        ;
+
+        
+    
+    
+            marker_35a9fad99748ea65e443cda5b96b748d.bindTooltip(
+                `<div>
+                     Alipaşa Mah. Suvaroğlu Cad. No:33 A İpekyolu/Van ,İpekyolu,Van,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35a9fad99748ea65e443cda5b96b748d.setIcon(icon_772f55faec390029c84f0a61d4088e3b);
+            
+    
+            var marker_420f6961805d38c1d720ca0c743e82d8 = L.marker(
+                [36.324754, 29.330266],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_a751ef54e829a8d865ed80e2c588ed61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06bf1327c2b0d254b9491ff93fa42ca6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0669f6eca4c35a99dd56378f1a1bef5 = $(`<div id="html_e0669f6eca4c35a99dd56378f1a1bef5" style="width: 100.0%; height: 100.0%;">Atatürk Bulv.Ova Mah.No:203 Kaş/Antalya ,Kaş,Antalya,Turkey</div>`)[0];
+                popup_06bf1327c2b0d254b9491ff93fa42ca6.setContent(html_e0669f6eca4c35a99dd56378f1a1bef5);
+            
+        
+
+        marker_420f6961805d38c1d720ca0c743e82d8.bindPopup(popup_06bf1327c2b0d254b9491ff93fa42ca6)
+        ;
+
+        
+    
+    
+            marker_420f6961805d38c1d720ca0c743e82d8.bindTooltip(
+                `<div>
+                     Atatürk Bulv.Ova Mah.No:203 Kaş/Antalya ,Kaş,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_420f6961805d38c1d720ca0c743e82d8.setIcon(icon_a751ef54e829a8d865ed80e2c588ed61);
+            
+    
+            var marker_cad82b3c2ca1cfcce41369bb96fb6229 = L.marker(
+                [39.811424, 35.185783],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_a187ff4504f7d1e5c14132511241a820 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca160a05b2ef7c9080ca623efc4fe176 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb0ef9be0d188545028e4c1e350f4212 = $(`<div id="html_bb0ef9be0d188545028e4c1e350f4212" style="width: 100.0%; height: 100.0%;">Bahçelievler Mah. Müftüoğlu Cd. No:01A Sorgun/Yozgat ,Sorgun,Yozgat,Turkey</div>`)[0];
+                popup_ca160a05b2ef7c9080ca623efc4fe176.setContent(html_bb0ef9be0d188545028e4c1e350f4212);
+            
+        
+
+        marker_cad82b3c2ca1cfcce41369bb96fb6229.bindPopup(popup_ca160a05b2ef7c9080ca623efc4fe176)
+        ;
+
+        
+    
+    
+            marker_cad82b3c2ca1cfcce41369bb96fb6229.bindTooltip(
+                `<div>
+                     Bahçelievler Mah. Müftüoğlu Cd. No:01A Sorgun/Yozgat ,Sorgun,Yozgat,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cad82b3c2ca1cfcce41369bb96fb6229.setIcon(icon_a187ff4504f7d1e5c14132511241a820);
+            
+    
+            var marker_eaad5ad44e575178872621e6f307b868 = L.marker(
+                [39.62446, 27.899563],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_278c8ae56f90e1c01ba468611aada8d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1c60c6912587cf5716580083035da22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9da40373dd7e46128931611323a5d8f = $(`<div id="html_c9da40373dd7e46128931611323a5d8f" style="width: 100.0%; height: 100.0%;">Bahçelievler Mh. Teknik Lise Cd. No: 122B Altıeylül/Balıkesir ,Altıeylül,Balıkesir,Turkey</div>`)[0];
+                popup_e1c60c6912587cf5716580083035da22.setContent(html_c9da40373dd7e46128931611323a5d8f);
+            
+        
+
+        marker_eaad5ad44e575178872621e6f307b868.bindPopup(popup_e1c60c6912587cf5716580083035da22)
+        ;
+
+        
+    
+    
+            marker_eaad5ad44e575178872621e6f307b868.bindTooltip(
+                `<div>
+                     Bahçelievler Mh. Teknik Lise Cd. No: 122B Altıeylül/Balıkesir ,Altıeylül,Balıkesir,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eaad5ad44e575178872621e6f307b868.setIcon(icon_278c8ae56f90e1c01ba468611aada8d1);
+            
+    
+            var marker_cedf01d6ea849c8b8a48a1c7113e2b89 = L.marker(
+                [37.718748, 30.282498],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_1d27d6c3626563ecfa7dd6d15289bacd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4aa8e8403326f804672508f4c6d5cb1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da722c99025422d06c931d60e980270d = $(`<div id="html_da722c99025422d06c931d60e980270d" style="width: 100.0%; height: 100.0%;">Burdur Merkez Bağlar Mah 14034 Sokak No:21D Merkez/Burdur ,Merkez,Burdur,Turkey</div>`)[0];
+                popup_4aa8e8403326f804672508f4c6d5cb1f.setContent(html_da722c99025422d06c931d60e980270d);
+            
+        
+
+        marker_cedf01d6ea849c8b8a48a1c7113e2b89.bindPopup(popup_4aa8e8403326f804672508f4c6d5cb1f)
+        ;
+
+        
+    
+    
+            marker_cedf01d6ea849c8b8a48a1c7113e2b89.bindTooltip(
+                `<div>
+                     Burdur Merkez Bağlar Mah 14034 Sokak No:21D Merkez/Burdur ,Merkez,Burdur,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cedf01d6ea849c8b8a48a1c7113e2b89.setIcon(icon_1d27d6c3626563ecfa7dd6d15289bacd);
+            
+    
+            var marker_75f7cd4ebfe0bbd26522fa64534940a4 = L.marker(
+                [38.664558, 27.025757],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_01cdd5364f36eba7fccce97ce9df37da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92ed7b53fb593fc775c17c1bff5cc518 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82ef95e3385385376ab5be5663e3631f = $(`<div id="html_82ef95e3385385376ab5be5663e3631f" style="width: 100.0%; height: 100.0%;">Cumhuriyet Mah.Çanakkale Asfaltı No:170A-172A Menemen/İzmir ,Merkez,İzmir,Turkey</div>`)[0];
+                popup_92ed7b53fb593fc775c17c1bff5cc518.setContent(html_82ef95e3385385376ab5be5663e3631f);
+            
+        
+
+        marker_75f7cd4ebfe0bbd26522fa64534940a4.bindPopup(popup_92ed7b53fb593fc775c17c1bff5cc518)
+        ;
+
+        
+    
+    
+            marker_75f7cd4ebfe0bbd26522fa64534940a4.bindTooltip(
+                `<div>
+                     Cumhuriyet Mah.Çanakkale Asfaltı No:170A-172A Menemen/İzmir ,Merkez,İzmir,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75f7cd4ebfe0bbd26522fa64534940a4.setIcon(icon_01cdd5364f36eba7fccce97ce9df37da);
+            
+    
+            var marker_56c32514eaf5890eb09632daa84a716e = L.marker(
+                [36.755748, 28.939709],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_3e6553255f64b1b7edde246f67d0e122 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78451bf4bb5b5310d5446b47de8e1363 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f219868ca14b1b55c4d7d9fc9701b33 = $(`<div id="html_5f219868ca14b1b55c4d7d9fc9701b33" style="width: 100.0%; height: 100.0%;">Cumhuriyet Mh Turgut Özal Cd No: 4 Göcek Fethiye/Muğla ,Fethiye,Muğla,Turkey</div>`)[0];
+                popup_78451bf4bb5b5310d5446b47de8e1363.setContent(html_5f219868ca14b1b55c4d7d9fc9701b33);
+            
+        
+
+        marker_56c32514eaf5890eb09632daa84a716e.bindPopup(popup_78451bf4bb5b5310d5446b47de8e1363)
+        ;
+
+        
+    
+    
+            marker_56c32514eaf5890eb09632daa84a716e.bindTooltip(
+                `<div>
+                     Cumhuriyet Mh Turgut Özal Cd No: 4 Göcek Fethiye/Muğla ,Fethiye,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56c32514eaf5890eb09632daa84a716e.setIcon(icon_3e6553255f64b1b7edde246f67d0e122);
+            
+    
+            var marker_9fdd1cc72c3b64ef4047b839384f72e1 = L.marker(
+                [41.42725, 32.072129],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_957b02d2b19c0ac786c96d2ef4027242 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52004ecb95613e6098c10424530e6a20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bd83842ebec94baaaad045be815c008 = $(`<div id="html_0bd83842ebec94baaaad045be815c008" style="width: 100.0%; height: 100.0%;">Filyos Mah Namık Kemal Sok No:49 Çaycuma/Zonguldak ,Çaycuma,Zonguldak,Turkey</div>`)[0];
+                popup_52004ecb95613e6098c10424530e6a20.setContent(html_0bd83842ebec94baaaad045be815c008);
+            
+        
+
+        marker_9fdd1cc72c3b64ef4047b839384f72e1.bindPopup(popup_52004ecb95613e6098c10424530e6a20)
+        ;
+
+        
+    
+    
+            marker_9fdd1cc72c3b64ef4047b839384f72e1.bindTooltip(
+                `<div>
+                     Filyos Mah Namık Kemal Sok No:49 Çaycuma/Zonguldak ,Çaycuma,Zonguldak,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fdd1cc72c3b64ef4047b839384f72e1.setIcon(icon_957b02d2b19c0ac786c96d2ef4027242);
+            
+    
+            var marker_3fe93cb6af9d5088cfbf821accd2bbd2 = L.marker(
+                [36.662231, 29.1183],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_63b004c0e1fdfdf0554e393ae7366c76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_177973ef730edeb785b96ccb2717c6c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58aac9fb102b44d56952ed65eeddbef4 = $(`<div id="html_58aac9fb102b44d56952ed65eeddbef4" style="width: 100.0%; height: 100.0%;">Foça Mah. Barış Manço Blv. No:43 Fethiye/Muğla ,Fethiye,Muğla,Turkey</div>`)[0];
+                popup_177973ef730edeb785b96ccb2717c6c0.setContent(html_58aac9fb102b44d56952ed65eeddbef4);
+            
+        
+
+        marker_3fe93cb6af9d5088cfbf821accd2bbd2.bindPopup(popup_177973ef730edeb785b96ccb2717c6c0)
+        ;
+
+        
+    
+    
+            marker_3fe93cb6af9d5088cfbf821accd2bbd2.bindTooltip(
+                `<div>
+                     Foça Mah. Barış Manço Blv. No:43 Fethiye/Muğla ,Fethiye,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3fe93cb6af9d5088cfbf821accd2bbd2.setIcon(icon_63b004c0e1fdfdf0554e393ae7366c76);
+            
+    
+            var marker_35556df3df6f4988c8cf08630dbe6a14 = L.marker(
+                [36.662806, 29.112357],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_86c89dc8b9f96db8811b261027123dd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a104165c7ba4f52de30ec18aabfe04f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_decf6d2bb87944629983e6c792f8870d = $(`<div id="html_decf6d2bb87944629983e6c792f8870d" style="width: 100.0%; height: 100.0%;">Foça Mah. Cahit Begenç Bulvarı Fethiye/Muğla ,Fethiye,Muğla,Turkey</div>`)[0];
+                popup_8a104165c7ba4f52de30ec18aabfe04f.setContent(html_decf6d2bb87944629983e6c792f8870d);
+            
+        
+
+        marker_35556df3df6f4988c8cf08630dbe6a14.bindPopup(popup_8a104165c7ba4f52de30ec18aabfe04f)
+        ;
+
+        
+    
+    
+            marker_35556df3df6f4988c8cf08630dbe6a14.bindTooltip(
+                `<div>
+                     Foça Mah. Cahit Begenç Bulvarı Fethiye/Muğla ,Fethiye,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35556df3df6f4988c8cf08630dbe6a14.setIcon(icon_86c89dc8b9f96db8811b261027123dd6);
+            
+    
+            var marker_5d930d05eb47c556d4954d9afcfa2aca = L.marker(
+                [36.547457, 32.011655],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_8099c4d0f948d763c7c35033045b6111 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c7020a34f41ecfa2438616c289607fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_889a604ac7dc6b7c9a4431832a80c51c = $(`<div id="html_889a604ac7dc6b7c9a4431832a80c51c" style="width: 100.0%; height: 100.0%;">Güller Pınarı Mah. Hasan Akçalıoğlu Cad. Alanya/Antalya ,Alanya,Antalya,Turkey</div>`)[0];
+                popup_6c7020a34f41ecfa2438616c289607fd.setContent(html_889a604ac7dc6b7c9a4431832a80c51c);
+            
+        
+
+        marker_5d930d05eb47c556d4954d9afcfa2aca.bindPopup(popup_6c7020a34f41ecfa2438616c289607fd)
+        ;
+
+        
+    
+    
+            marker_5d930d05eb47c556d4954d9afcfa2aca.bindTooltip(
+                `<div>
+                     Güller Pınarı Mah. Hasan Akçalıoğlu Cad. Alanya/Antalya ,Alanya,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d930d05eb47c556d4954d9afcfa2aca.setIcon(icon_8099c4d0f948d763c7c35033045b6111);
+            
+    
+            var marker_ee0bf7273c66a9e7cec42ef5d81ed529 = L.marker(
+                [36.93924, 30.741057],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_27d230582baad6bed265ce82890ec5d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5c011d0e6dfd2f421d9185315dc8a65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b807b80fd0a49a4f3054b26178efc4e3 = $(`<div id="html_b807b80fd0a49a4f3054b26178efc4e3" style="width: 100.0%; height: 100.0%;">Güneş Mah.Kırçiçeği Cad.No:15 Ea,Eb,Ec Kepez/Antalya ,Kahramanmazan,Antalya,Turkey</div>`)[0];
+                popup_a5c011d0e6dfd2f421d9185315dc8a65.setContent(html_b807b80fd0a49a4f3054b26178efc4e3);
+            
+        
+
+        marker_ee0bf7273c66a9e7cec42ef5d81ed529.bindPopup(popup_a5c011d0e6dfd2f421d9185315dc8a65)
+        ;
+
+        
+    
+    
+            marker_ee0bf7273c66a9e7cec42ef5d81ed529.bindTooltip(
+                `<div>
+                     Güneş Mah.Kırçiçeği Cad.No:15 Ea,Eb,Ec Kepez/Antalya ,Kahramanmazan,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee0bf7273c66a9e7cec42ef5d81ed529.setIcon(icon_27d230582baad6bed265ce82890ec5d1);
+            
+    
+            var marker_bde4cd9c472be406047a18c2425d19a9 = L.marker(
+                [39.651605, 27.890703],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_3533b12f98243bb8af25fbc7b6d75887 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8728a1415fa3f403a244d1a3cf114ee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ceb2dcc45aa68c39396f60d4bd4f35a = $(`<div id="html_3ceb2dcc45aa68c39396f60d4bd4f35a" style="width: 100.0%; height: 100.0%;">Han Mah. Bandırma Cad. No:9/C Susurluk/Balıkesir ,Susurluk,Balıkesir,Turkey</div>`)[0];
+                popup_8728a1415fa3f403a244d1a3cf114ee3.setContent(html_3ceb2dcc45aa68c39396f60d4bd4f35a);
+            
+        
+
+        marker_bde4cd9c472be406047a18c2425d19a9.bindPopup(popup_8728a1415fa3f403a244d1a3cf114ee3)
+        ;
+
+        
+    
+    
+            marker_bde4cd9c472be406047a18c2425d19a9.bindTooltip(
+                `<div>
+                     Han Mah. Bandırma Cad. No:9/C Susurluk/Balıkesir ,Susurluk,Balıkesir,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bde4cd9c472be406047a18c2425d19a9.setIcon(icon_3533b12f98243bb8af25fbc7b6d75887);
+            
+    
+            var marker_290a5380ecc76a6c0f4a1123b98e3e4f = L.marker(
+                [38.597772, 27.077957],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_8e24db2b1076a337c3851a9da69113ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cd80c05b245fe2ab7ca4c2f41fbec67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a54bf4f860acefa6c7c42b5914b8a993 = $(`<div id="html_a54bf4f860acefa6c7c42b5914b8a993" style="width: 100.0%; height: 100.0%;">İsmet İnönü Mah. 1281 Sokak No:1/1B Menemen/İzmir ,Menemen,İzmir,Turkey</div>`)[0];
+                popup_6cd80c05b245fe2ab7ca4c2f41fbec67.setContent(html_a54bf4f860acefa6c7c42b5914b8a993);
+            
+        
+
+        marker_290a5380ecc76a6c0f4a1123b98e3e4f.bindPopup(popup_6cd80c05b245fe2ab7ca4c2f41fbec67)
+        ;
+
+        
+    
+    
+            marker_290a5380ecc76a6c0f4a1123b98e3e4f.bindTooltip(
+                `<div>
+                     İsmet İnönü Mah. 1281 Sokak No:1/1B Menemen/İzmir ,Menemen,İzmir,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_290a5380ecc76a6c0f4a1123b98e3e4f.setIcon(icon_8e24db2b1076a337c3851a9da69113ef);
+            
+    
+            var marker_fd9a4afdd4cddc596bc407f443e6b63f = L.marker(
+                [37.772697, 29.069101],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_0d18c2f82dca0c512e8c440d5881d5bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b41831545bbc9b39c3f9b1c6d3ab292 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe5b01075cb64abebe3856dde5b6d453 = $(`<div id="html_fe5b01075cb64abebe3856dde5b6d453" style="width: 100.0%; height: 100.0%;">Karaman Mh. 1842 Sk. No:15A Merkezefendi/Denizli ,Merkezefendi,Denizli,Turkey</div>`)[0];
+                popup_5b41831545bbc9b39c3f9b1c6d3ab292.setContent(html_fe5b01075cb64abebe3856dde5b6d453);
+            
+        
+
+        marker_fd9a4afdd4cddc596bc407f443e6b63f.bindPopup(popup_5b41831545bbc9b39c3f9b1c6d3ab292)
+        ;
+
+        
+    
+    
+            marker_fd9a4afdd4cddc596bc407f443e6b63f.bindTooltip(
+                `<div>
+                     Karaman Mh. 1842 Sk. No:15A Merkezefendi/Denizli ,Merkezefendi,Denizli,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd9a4afdd4cddc596bc407f443e6b63f.setIcon(icon_0d18c2f82dca0c512e8c440d5881d5bb);
+            
+    
+            var marker_1738835ccdcadd06102b3e04e1e9ded1 = L.marker(
+                [40.33847, 36.54498],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_02672c6997544fea689edd79de537659 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b4dc54cadc186c4bb4bb81ce0644769 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ca8d3e17c35f118f39c921158728b92 = $(`<div id="html_2ca8d3e17c35f118f39c921158728b92" style="width: 100.0%; height: 100.0%;">Karşıyaka Mah. Orhan Gazi Bulvarı No:138/2A Merkez/Tokat ,Merkez,Tokat,Turkey</div>`)[0];
+                popup_0b4dc54cadc186c4bb4bb81ce0644769.setContent(html_2ca8d3e17c35f118f39c921158728b92);
+            
+        
+
+        marker_1738835ccdcadd06102b3e04e1e9ded1.bindPopup(popup_0b4dc54cadc186c4bb4bb81ce0644769)
+        ;
+
+        
+    
+    
+            marker_1738835ccdcadd06102b3e04e1e9ded1.bindTooltip(
+                `<div>
+                     Karşıyaka Mah. Orhan Gazi Bulvarı No:138/2A Merkez/Tokat ,Merkez,Tokat,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1738835ccdcadd06102b3e04e1e9ded1.setIcon(icon_02672c6997544fea689edd79de537659);
+            
+    
+            var marker_2bedb8f361ba3ccf4d9b7cab1f90b6cc = L.marker(
+                [36.578286, 31.897017],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_ee67ed68f5da2285b8130ad8d6850293 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3d09a4756397e613d84f2a4ed8b3e69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dc026944c91386401d018add01bffe2 = $(`<div id="html_8dc026944c91386401d018add01bffe2" style="width: 100.0%; height: 100.0%;">Konaklı Mah. Mustafa Kemal Bulvarı No:84A Alanya/Antalya ,Alanya,Antalya,Turkey</div>`)[0];
+                popup_e3d09a4756397e613d84f2a4ed8b3e69.setContent(html_8dc026944c91386401d018add01bffe2);
+            
+        
+
+        marker_2bedb8f361ba3ccf4d9b7cab1f90b6cc.bindPopup(popup_e3d09a4756397e613d84f2a4ed8b3e69)
+        ;
+
+        
+    
+    
+            marker_2bedb8f361ba3ccf4d9b7cab1f90b6cc.bindTooltip(
+                `<div>
+                     Konaklı Mah. Mustafa Kemal Bulvarı No:84A Alanya/Antalya ,Alanya,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2bedb8f361ba3ccf4d9b7cab1f90b6cc.setIcon(icon_ee67ed68f5da2285b8130ad8d6850293);
+            
+    
+            var marker_999877b8df7beb0eb0de4689020ce712 = L.marker(
+                [39.14431, 34.157144],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_3a5803142557a99b0cfd327d1e45ac53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4e2686a1d38624fc9900f0cf4084eef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a19401867725b0a405efc4e949f0898 = $(`<div id="html_5a19401867725b0a405efc4e949f0898" style="width: 100.0%; height: 100.0%;">Kuşdilli Mah. 1372. Sok. No:42 Merkez/Kırşehir ,Merkez,Kırşehir,Turkey</div>`)[0];
+                popup_f4e2686a1d38624fc9900f0cf4084eef.setContent(html_5a19401867725b0a405efc4e949f0898);
+            
+        
+
+        marker_999877b8df7beb0eb0de4689020ce712.bindPopup(popup_f4e2686a1d38624fc9900f0cf4084eef)
+        ;
+
+        
+    
+    
+            marker_999877b8df7beb0eb0de4689020ce712.bindTooltip(
+                `<div>
+                     Kuşdilli Mah. 1372. Sok. No:42 Merkez/Kırşehir ,Merkez,Kırşehir,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_999877b8df7beb0eb0de4689020ce712.setIcon(icon_3a5803142557a99b0cfd327d1e45ac53);
+            
+    
+            var marker_4d804c7b195164fd2570f55d856637f8 = L.marker(
+                [36.772345, 28.809816],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_b137fdd8db87993dd495dca9fda108af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d126a1bed891ac9285a9c154b6bfa51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0f0c58a90138276192b98c3b6bea87d = $(`<div id="html_c0f0c58a90138276192b98c3b6bea87d" style="width: 100.0%; height: 100.0%;">Merkez Mah.Sanayi Cad. No3A-3B Dalaman/Muğla ,Dalaman,Muğla,Turkey</div>`)[0];
+                popup_3d126a1bed891ac9285a9c154b6bfa51.setContent(html_c0f0c58a90138276192b98c3b6bea87d);
+            
+        
+
+        marker_4d804c7b195164fd2570f55d856637f8.bindPopup(popup_3d126a1bed891ac9285a9c154b6bfa51)
+        ;
+
+        
+    
+    
+            marker_4d804c7b195164fd2570f55d856637f8.bindTooltip(
+                `<div>
+                     Merkez Mah.Sanayi Cad. No3A-3B Dalaman/Muğla ,Dalaman,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d804c7b195164fd2570f55d856637f8.setIcon(icon_b137fdd8db87993dd495dca9fda108af);
+            
+    
+            var marker_88f6b0eadc497591f92d660d5fb9877d = L.marker(
+                [36.553662, 32.051217],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_80c7c1b94c37d214a380bad7ca93874d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2d47850dcbfa9e90ecc6aa4bc18eade = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1979fce0864e1ac7c2dc10370dd9dbdf = $(`<div id="html_1979fce0864e1ac7c2dc10370dd9dbdf" style="width: 100.0%; height: 100.0%;">Oba Mah. Çarşamba Cd. No:36 Alanya/Antalya ,Alanya,Antalya,Turkey</div>`)[0];
+                popup_a2d47850dcbfa9e90ecc6aa4bc18eade.setContent(html_1979fce0864e1ac7c2dc10370dd9dbdf);
+            
+        
+
+        marker_88f6b0eadc497591f92d660d5fb9877d.bindPopup(popup_a2d47850dcbfa9e90ecc6aa4bc18eade)
+        ;
+
+        
+    
+    
+            marker_88f6b0eadc497591f92d660d5fb9877d.bindTooltip(
+                `<div>
+                     Oba Mah. Çarşamba Cd. No:36 Alanya/Antalya ,Alanya,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88f6b0eadc497591f92d660d5fb9877d.setIcon(icon_80c7c1b94c37d214a380bad7ca93874d);
+            
+    
+            var marker_7d3f31b262a27803727de80e26cc019c = L.marker(
+                [38.481657, 27.127124],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_ac016d102cfb561221dabc7e7105b0a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47c46d0c0f20ad1267b783f026b8bba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_897495a81db7b6d97a9cf1a1137e8cf4 = $(`<div id="html_897495a81db7b6d97a9cf1a1137e8cf4" style="width: 100.0%; height: 100.0%;">Onur Mah.7334 Sokak No:60 A Bayraklı/İzmir ,Bayraklı,İzmir,Turkey</div>`)[0];
+                popup_47c46d0c0f20ad1267b783f026b8bba9.setContent(html_897495a81db7b6d97a9cf1a1137e8cf4);
+            
+        
+
+        marker_7d3f31b262a27803727de80e26cc019c.bindPopup(popup_47c46d0c0f20ad1267b783f026b8bba9)
+        ;
+
+        
+    
+    
+            marker_7d3f31b262a27803727de80e26cc019c.bindTooltip(
+                `<div>
+                     Onur Mah.7334 Sokak No:60 A Bayraklı/İzmir ,Bayraklı,İzmir,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d3f31b262a27803727de80e26cc019c.setIcon(icon_ac016d102cfb561221dabc7e7105b0a5);
+            
+    
+            var marker_049d5bcd1649d1786b5f720ee395390c = L.marker(
+                [36.576551, 29.150865],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_178998f6a76484372f1c172af290a255 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed8844748d2910f536b407013131190d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63b72033268381a723d30ec1eef3b25e = $(`<div id="html_63b72033268381a723d30ec1eef3b25e" style="width: 100.0%; height: 100.0%;">Ölüdeniz Mah. Atatürk Cad. No:82/1 Fethiye/Muğla ,Fethiye,Muğla,Turkey</div>`)[0];
+                popup_ed8844748d2910f536b407013131190d.setContent(html_63b72033268381a723d30ec1eef3b25e);
+            
+        
+
+        marker_049d5bcd1649d1786b5f720ee395390c.bindPopup(popup_ed8844748d2910f536b407013131190d)
+        ;
+
+        
+    
+    
+            marker_049d5bcd1649d1786b5f720ee395390c.bindTooltip(
+                `<div>
+                     Ölüdeniz Mah. Atatürk Cad. No:82/1 Fethiye/Muğla ,Fethiye,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_049d5bcd1649d1786b5f720ee395390c.setIcon(icon_178998f6a76484372f1c172af290a255);
+            
+    
+            var marker_f454a01588c46f433df90750f6856613 = L.marker(
+                [36.5752, 29.13797],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_5e141f7b8111073f86e361ec9f0f6cff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_643d575029854af461ed29013e81f1f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c88f952bb00e315f2b3e51feece69001 = $(`<div id="html_c88f952bb00e315f2b3e51feece69001" style="width: 100.0%; height: 100.0%;">Ölüdeniz Mahallesi Ata Caddesi No:23-A Fethiye/Muğla ,Fethiye,Muğla,Turkey</div>`)[0];
+                popup_643d575029854af461ed29013e81f1f4.setContent(html_c88f952bb00e315f2b3e51feece69001);
+            
+        
+
+        marker_f454a01588c46f433df90750f6856613.bindPopup(popup_643d575029854af461ed29013e81f1f4)
+        ;
+
+        
+    
+    
+            marker_f454a01588c46f433df90750f6856613.bindTooltip(
+                `<div>
+                     Ölüdeniz Mahallesi Ata Caddesi No:23-A Fethiye/Muğla ,Fethiye,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f454a01588c46f433df90750f6856613.setIcon(icon_5e141f7b8111073f86e361ec9f0f6cff);
+            
+    
+            var marker_f6ceb75f2c312b6072df9580cedcecb6 = L.marker(
+                [40.319301, 36.550069],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_31c6f3316df44b5c8021bc0694441b8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbc1bd81a6222c8640227bc70a9249bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_940af5bdd2d20998c7873bb27bf40e3d = $(`<div id="html_940af5bdd2d20998c7873bb27bf40e3d" style="width: 100.0%; height: 100.0%;">Semerkant Mah. Gop Bulvarı No:136A Merkez/Tokat ,Merkez,Tokat,Turkey</div>`)[0];
+                popup_fbc1bd81a6222c8640227bc70a9249bc.setContent(html_940af5bdd2d20998c7873bb27bf40e3d);
+            
+        
+
+        marker_f6ceb75f2c312b6072df9580cedcecb6.bindPopup(popup_fbc1bd81a6222c8640227bc70a9249bc)
+        ;
+
+        
+    
+    
+            marker_f6ceb75f2c312b6072df9580cedcecb6.bindTooltip(
+                `<div>
+                     Semerkant Mah. Gop Bulvarı No:136A Merkez/Tokat ,Merkez,Tokat,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6ceb75f2c312b6072df9580cedcecb6.setIcon(icon_31c6f3316df44b5c8021bc0694441b8a);
+            
+    
+            var marker_cf635a2942538356e1c9ffa4d7f30b14 = L.marker(
+                [36.326463, 33.885074],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_999563570f0dc9e5262692eb5f67d8d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c66db4d350220b318c29a51b41b620c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_790b01a2fc2459d0833b1922efd6413f = $(`<div id="html_790b01a2fc2459d0833b1922efd6413f" style="width: 100.0%; height: 100.0%;">Taşucu Mah. Fevzipaşa Sk. No:2E-F-G-H Silifke/Mersin ,Silifke,Mersin,Turkey</div>`)[0];
+                popup_8c66db4d350220b318c29a51b41b620c.setContent(html_790b01a2fc2459d0833b1922efd6413f);
+            
+        
+
+        marker_cf635a2942538356e1c9ffa4d7f30b14.bindPopup(popup_8c66db4d350220b318c29a51b41b620c)
+        ;
+
+        
+    
+    
+            marker_cf635a2942538356e1c9ffa4d7f30b14.bindTooltip(
+                `<div>
+                     Taşucu Mah. Fevzipaşa Sk. No:2E-F-G-H Silifke/Mersin ,Silifke,Mersin,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf635a2942538356e1c9ffa4d7f30b14.setIcon(icon_999563570f0dc9e5262692eb5f67d8d1);
+            
+    
+            var marker_eb87389367b447db778d207af4d3c976 = L.marker(
+                [39.008619, 43.398358],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_2f89fd28b015fcf68ed9a466c61223f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a18cdfc44756b771f80e484d43513e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be236937ba0bd9a707662f9a61394744 = $(`<div id="html_be236937ba0bd9a707662f9a61394744" style="width: 100.0%; height: 100.0%;">Tekevler Mah. Toki Erciş/Van ,Erciş,Van,Turkey</div>`)[0];
+                popup_3a18cdfc44756b771f80e484d43513e6.setContent(html_be236937ba0bd9a707662f9a61394744);
+            
+        
+
+        marker_eb87389367b447db778d207af4d3c976.bindPopup(popup_3a18cdfc44756b771f80e484d43513e6)
+        ;
+
+        
+    
+    
+            marker_eb87389367b447db778d207af4d3c976.bindTooltip(
+                `<div>
+                     Tekevler Mah. Toki Erciş/Van ,Erciş,Van,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb87389367b447db778d207af4d3c976.setIcon(icon_2f89fd28b015fcf68ed9a466c61223f0);
+            
+    
+            var marker_af24772ea0b7390b6c769b0ad16f3ef7 = L.marker(
+                [38.611101, 27.386269],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_dfb93f1819d504689a393f128c6337d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_986d43ce03fb22592d4a8cb492cec4b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1c2ff53a480e931e63f52c97d52edf6 = $(`<div id="html_e1c2ff53a480e931e63f52c97d52edf6" style="width: 100.0%; height: 100.0%;">Uncubozköy Mah. 5515 Sk. No:41/10 Yunusemre/Manisa ,Yunusemre,Manisa,Turkey</div>`)[0];
+                popup_986d43ce03fb22592d4a8cb492cec4b0.setContent(html_e1c2ff53a480e931e63f52c97d52edf6);
+            
+        
+
+        marker_af24772ea0b7390b6c769b0ad16f3ef7.bindPopup(popup_986d43ce03fb22592d4a8cb492cec4b0)
+        ;
+
+        
+    
+    
+            marker_af24772ea0b7390b6c769b0ad16f3ef7.bindTooltip(
+                `<div>
+                     Uncubozköy Mah. 5515 Sk. No:41/10 Yunusemre/Manisa ,Yunusemre,Manisa,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_af24772ea0b7390b6c769b0ad16f3ef7.setIcon(icon_dfb93f1819d504689a393f128c6337d0);
+            
+    
+            var marker_8a621a108f0539d422a95b1f7d5a2497 = L.marker(
+                [37.324663, 40.725876],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_e9b36170c6597b7c9f8a69e76f83435c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_658ad8101eea1704b312f492a089a403 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60c2566a68cec7e88f6b2b7e48ce7fcf = $(`<div id="html_60c2566a68cec7e88f6b2b7e48ce7fcf" style="width: 100.0%; height: 100.0%;">Yalım Mah. 13 Mart Cad. Dış Kapı No:26A Artuklu/Mardin ,Artuklu,Mardin,Turkey</div>`)[0];
+                popup_658ad8101eea1704b312f492a089a403.setContent(html_60c2566a68cec7e88f6b2b7e48ce7fcf);
+            
+        
+
+        marker_8a621a108f0539d422a95b1f7d5a2497.bindPopup(popup_658ad8101eea1704b312f492a089a403)
+        ;
+
+        
+    
+    
+            marker_8a621a108f0539d422a95b1f7d5a2497.bindTooltip(
+                `<div>
+                     Yalım Mah. 13 Mart Cad. Dış Kapı No:26A Artuklu/Mardin ,Artuklu,Mardin,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a621a108f0539d422a95b1f7d5a2497.setIcon(icon_e9b36170c6597b7c9f8a69e76f83435c);
+            
+    
+            var marker_1cab887c2adb9e6456ad7a9dc13cf4a2 = L.marker(
+                [37.910599, 28.32841],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_1faaf1031edb22c20a3d048d5c11d030 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3471d95363646addb613fb559d38d831 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11985a971ffff6fb99a4d67342a816e4 = $(`<div id="html_11985a971ffff6fb99a4d67342a816e4" style="width: 100.0%; height: 100.0%;">Yeşil Mah. 1857 Sok. No:15A Nazilli/Aydın ,Nazilli,Aydın,Turkey</div>`)[0];
+                popup_3471d95363646addb613fb559d38d831.setContent(html_11985a971ffff6fb99a4d67342a816e4);
+            
+        
+
+        marker_1cab887c2adb9e6456ad7a9dc13cf4a2.bindPopup(popup_3471d95363646addb613fb559d38d831)
+        ;
+
+        
+    
+    
+            marker_1cab887c2adb9e6456ad7a9dc13cf4a2.bindTooltip(
+                `<div>
+                     Yeşil Mah. 1857 Sok. No:15A Nazilli/Aydın ,Nazilli,Aydın,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1cab887c2adb9e6456ad7a9dc13cf4a2.setIcon(icon_1faaf1031edb22c20a3d048d5c11d030);
+            
+    
+            var marker_fc90b909f7f26dcb5e8c93b26ecf3670 = L.marker(
+                [36.324676, 33.887351],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_81566f8a0ba2b75c94bf28a885161d87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9601d16be7a768e6367b1463de261ce6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b42b4048e9e988b7a328d31107812dd = $(`<div id="html_3b42b4048e9e988b7a328d31107812dd" style="width: 100.0%; height: 100.0%;">Taşucu Mah. Atatürk Blv. No:105/B Silifke/Mersin ,Silifke,Mersin,Turkey</div>`)[0];
+                popup_9601d16be7a768e6367b1463de261ce6.setContent(html_3b42b4048e9e988b7a328d31107812dd);
+            
+        
+
+        marker_fc90b909f7f26dcb5e8c93b26ecf3670.bindPopup(popup_9601d16be7a768e6367b1463de261ce6)
+        ;
+
+        
+    
+    
+            marker_fc90b909f7f26dcb5e8c93b26ecf3670.bindTooltip(
+                `<div>
+                     Taşucu Mah. Atatürk Blv. No:105/B Silifke/Mersin ,Silifke,Mersin,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc90b909f7f26dcb5e8c93b26ecf3670.setIcon(icon_81566f8a0ba2b75c94bf28a885161d87);
+            
+    
+            var marker_911c34d3efe3cb8f538a1917169f185d = L.marker(
+                [36.54334, 32.002802],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_f04746fc32282b1bfe5fae6024317667 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcf43172515695993dd90e96f94b8c1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0820ea37654a6d4114cb09d417c67161 = $(`<div id="html_0820ea37654a6d4114cb09d417c67161" style="width: 100.0%; height: 100.0%;">Unspecified ,Alanya,Antalya,Turkey</div>`)[0];
+                popup_fcf43172515695993dd90e96f94b8c1d.setContent(html_0820ea37654a6d4114cb09d417c67161);
+            
+        
+
+        marker_911c34d3efe3cb8f538a1917169f185d.bindPopup(popup_fcf43172515695993dd90e96f94b8c1d)
+        ;
+
+        
+    
+    
+            marker_911c34d3efe3cb8f538a1917169f185d.bindTooltip(
+                `<div>
+                     Unspecified ,Alanya,Antalya,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_911c34d3efe3cb8f538a1917169f185d.setIcon(icon_f04746fc32282b1bfe5fae6024317667);
+            
+    
+            var marker_12dab1c171693b072ba7056b548a0c16 = L.marker(
+                [41.030142, 37.499508],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_176726c38a51fa691f527ce7b27b3888 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd7d9cc52c430b6bfb55636e84e56178 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_071429795766a4924cc230f9b1753251 = $(`<div id="html_071429795766a4924cc230f9b1753251" style="width: 100.0%; height: 100.0%;">Unspecified ,Fatsa,Ordu,Turkey</div>`)[0];
+                popup_fd7d9cc52c430b6bfb55636e84e56178.setContent(html_071429795766a4924cc230f9b1753251);
+            
+        
+
+        marker_12dab1c171693b072ba7056b548a0c16.bindPopup(popup_fd7d9cc52c430b6bfb55636e84e56178)
+        ;
+
+        
+    
+    
+            marker_12dab1c171693b072ba7056b548a0c16.bindTooltip(
+                `<div>
+                     Unspecified ,Fatsa,Ordu,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12dab1c171693b072ba7056b548a0c16.setIcon(icon_176726c38a51fa691f527ce7b27b3888);
+            
+    
+            var marker_677aeeb0acd7053d1e2b066be9e30c38 = L.marker(
+                [36.62253, 29.11148],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_e17473424e62fded82a4550a1e584231 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3559526e5af3f81516c2aac28478b31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eeb6e4fb505dd91b6a9b8d14147c795 = $(`<div id="html_3eeb6e4fb505dd91b6a9b8d14147c795" style="width: 100.0%; height: 100.0%;">Unspecified ,Fethiye,Muğla,Turkey</div>`)[0];
+                popup_d3559526e5af3f81516c2aac28478b31.setContent(html_3eeb6e4fb505dd91b6a9b8d14147c795);
+            
+        
+
+        marker_677aeeb0acd7053d1e2b066be9e30c38.bindPopup(popup_d3559526e5af3f81516c2aac28478b31)
+        ;
+
+        
+    
+    
+            marker_677aeeb0acd7053d1e2b066be9e30c38.bindTooltip(
+                `<div>
+                     Unspecified ,Fethiye,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_677aeeb0acd7053d1e2b066be9e30c38.setIcon(icon_e17473424e62fded82a4550a1e584231);
+            
+    
+            var marker_d30c8cd84766b6341565e8eb15e49858 = L.marker(
+                [41.063219, 28.767446],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_f4be33f2abc8b7cb849b3fdccd3e70b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7abbe96c2da96744c2e3ac5bbacdb960 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7becddc3d465e1763f36650e615564b7 = $(`<div id="html_7becddc3d465e1763f36650e615564b7" style="width: 100.0%; height: 100.0%;">Zıya Gökalp (İkıtellı 2) Mahallesı Kuzey Yanyol Ayazma Mevkı ,Başakşehir,İstanbul,Turkey</div>`)[0];
+                popup_7abbe96c2da96744c2e3ac5bbacdb960.setContent(html_7becddc3d465e1763f36650e615564b7);
+            
+        
+
+        marker_d30c8cd84766b6341565e8eb15e49858.bindPopup(popup_7abbe96c2da96744c2e3ac5bbacdb960)
+        ;
+
+        
+    
+    
+            marker_d30c8cd84766b6341565e8eb15e49858.bindTooltip(
+                `<div>
+                     Zıya Gökalp (İkıtellı 2) Mahallesı Kuzey Yanyol Ayazma Mevkı ,Başakşehir,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d30c8cd84766b6341565e8eb15e49858.setIcon(icon_f4be33f2abc8b7cb849b3fdccd3e70b9);
+            
+    
+            var marker_fe504e784c7df1ac7c4d25112da6c11d = L.marker(
+                [37.042508, 27.429241],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_bd063a7383b66ea1e53d99a3d85d400e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10129537c124f5377a57d64dfe4b2909 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1d4f67199860c4ed7951c8f37601ca3 = $(`<div id="html_a1d4f67199860c4ed7951c8f37601ca3" style="width: 100.0%; height: 100.0%;">Türkkuyusu Mah. Kıbrıs Şehitleri Cad. No:90,Bodrum,Muğla,Turkey</div>`)[0];
+                popup_10129537c124f5377a57d64dfe4b2909.setContent(html_a1d4f67199860c4ed7951c8f37601ca3);
+            
+        
+
+        marker_fe504e784c7df1ac7c4d25112da6c11d.bindPopup(popup_10129537c124f5377a57d64dfe4b2909)
+        ;
+
+        
+    
+    
+            marker_fe504e784c7df1ac7c4d25112da6c11d.bindTooltip(
+                `<div>
+                     Türkkuyusu Mah. Kıbrıs Şehitleri Cad. No:90,Bodrum,Muğla,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe504e784c7df1ac7c4d25112da6c11d.setIcon(icon_bd063a7383b66ea1e53d99a3d85d400e);
+            
+    
+            var marker_5de5a701164d8ba4f6dd8513f5f14d87 = L.marker(
+                [39.78341, 30.50427],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_e114164d3a68051e1e1158d5eff91cd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30659a4eeb033da21fa5499e18240b59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d83daa99d3618cae051e48e8fcb9d4fa = $(`<div id="html_d83daa99d3618cae051e48e8fcb9d4fa" style="width: 100.0%; height: 100.0%;">Zincirlikuyu Mah. 100.Yıl Bulvarı No:38/A TEPEBAŞI/ESKİŞEHİR,Tepebaşı,Eskişehir,Turkey</div>`)[0];
+                popup_30659a4eeb033da21fa5499e18240b59.setContent(html_d83daa99d3618cae051e48e8fcb9d4fa);
+            
+        
+
+        marker_5de5a701164d8ba4f6dd8513f5f14d87.bindPopup(popup_30659a4eeb033da21fa5499e18240b59)
+        ;
+
+        
+    
+    
+            marker_5de5a701164d8ba4f6dd8513f5f14d87.bindTooltip(
+                `<div>
+                     Zincirlikuyu Mah. 100.Yıl Bulvarı No:38/A TEPEBAŞI/ESKİŞEHİR,Tepebaşı,Eskişehir,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5de5a701164d8ba4f6dd8513f5f14d87.setIcon(icon_e114164d3a68051e1e1158d5eff91cd6);
+            
+    
+            var marker_15d1bfb48ab2923269986a4b7ed33eb3 = L.marker(
+                [40.977462, 28.741944],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_8e1def0218e1d8c5432f7c168429e79a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16f4e2ad24911ec12344e20ac326fb1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_586e7641e12cd4e6d172c5407fbac548 = $(`<div id="html_586e7641e12cd4e6d172c5407fbac548" style="width: 100.0%; height: 100.0%;">Üniversite, D-100 Kuzey Yanyolu No:42, 34320 Avcılar/İstanbul,Merkez,İstanbul,Turkey</div>`)[0];
+                popup_16f4e2ad24911ec12344e20ac326fb1f.setContent(html_586e7641e12cd4e6d172c5407fbac548);
+            
+        
+
+        marker_15d1bfb48ab2923269986a4b7ed33eb3.bindPopup(popup_16f4e2ad24911ec12344e20ac326fb1f)
+        ;
+
+        
+    
+    
+            marker_15d1bfb48ab2923269986a4b7ed33eb3.bindTooltip(
+                `<div>
+                     Üniversite, D-100 Kuzey Yanyolu No:42, 34320 Avcılar/İstanbul,Merkez,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15d1bfb48ab2923269986a4b7ed33eb3.setIcon(icon_8e1def0218e1d8c5432f7c168429e79a);
+            
+    
+            var marker_9f9ed509e0c0804d1608eb74414d11cd = L.marker(
+                [41.086259, 28.981013],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_2eedb430a0e6f55f9ab4d67755ed33be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81b358c2e23e90e480870b28f1837877 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_380413ad6bffc8cbf64440c472de0a49 = $(`<div id="html_380413ad6bffc8cbf64440c472de0a49" style="width: 100.0%; height: 100.0%;">Merkez Mah. Cendere Cad. No:28 PK: 34406 Kağıthane,Merkez,İstanbul,Turkey</div>`)[0];
+                popup_81b358c2e23e90e480870b28f1837877.setContent(html_380413ad6bffc8cbf64440c472de0a49);
+            
+        
+
+        marker_9f9ed509e0c0804d1608eb74414d11cd.bindPopup(popup_81b358c2e23e90e480870b28f1837877)
+        ;
+
+        
+    
+    
+            marker_9f9ed509e0c0804d1608eb74414d11cd.bindTooltip(
+                `<div>
+                     Merkez Mah. Cendere Cad. No:28 PK: 34406 Kağıthane,Merkez,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f9ed509e0c0804d1608eb74414d11cd.setIcon(icon_2eedb430a0e6f55f9ab4d67755ed33be);
+            
+    
+            var marker_b077d61fd70df34c9017f0342c5da936 = L.marker(
+                [41.081789, 28.922071],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_e3dcbf9922f5193515967307d6404013 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_913d68c7587460230d07717ed6a5de45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_677f8c670c9fc7039ba4b954fddf996c = $(`<div id="html_677f8c670c9fc7039ba4b954fddf996c" style="width: 100.0%; height: 100.0%;">Akşemsettin Mahallesi, Atatürk Blv Eyüp, 34070,Merkez,İstanbul,Turkey</div>`)[0];
+                popup_913d68c7587460230d07717ed6a5de45.setContent(html_677f8c670c9fc7039ba4b954fddf996c);
+            
+        
+
+        marker_b077d61fd70df34c9017f0342c5da936.bindPopup(popup_913d68c7587460230d07717ed6a5de45)
+        ;
+
+        
+    
+    
+            marker_b077d61fd70df34c9017f0342c5da936.bindTooltip(
+                `<div>
+                     Akşemsettin Mahallesi, Atatürk Blv Eyüp, 34070,Merkez,İstanbul,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b077d61fd70df34c9017f0342c5da936.setIcon(icon_e3dcbf9922f5193515967307d6404013);
+            
+    
+            var marker_74aa94a541b2983c5aa46e6b10945068 = L.marker(
+                [40.793394, 29.429023],
+                {
+}
+            ).addTo(map_b2fbd94f0155397c8857bc241908186a);
+        
+    
+            var icon_4cd0ce96fded662a26048f60bc75d2cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11378ecb1b49f37a632fd89f6bc00ee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8550d1bdf1fbeb62a57d3a999d822e4f = $(`<div id="html_8550d1bdf1fbeb62a57d3a999d822e4f" style="width: 100.0%; height: 100.0%;">Hacı Halil Mah. Atatürk Cad. No:65,Gebze,Kocaeli,Turkey</div>`)[0];
+                popup_11378ecb1b49f37a632fd89f6bc00ee3.setContent(html_8550d1bdf1fbeb62a57d3a999d822e4f);
+            
+        
+
+        marker_74aa94a541b2983c5aa46e6b10945068.bindPopup(popup_11378ecb1b49f37a632fd89f6bc00ee3)
+        ;
+
+        
+    
+    
+            marker_74aa94a541b2983c5aa46e6b10945068.bindTooltip(
+                `<div>
+                     Hacı Halil Mah. Atatürk Cad. No:65,Gebze,Kocaeli,Turkey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74aa94a541b2983c5aa46e6b10945068.setIcon(icon_4cd0ce96fded662a26048f60bc75d2cb);
+            
+</script>
+</html>
